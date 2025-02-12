@@ -25,7 +25,7 @@ jobs:
         env:
           STRATEGY_CONTEXT: ${{ toJson(strategy) }}
         run: echo "$STRATEGY_CONTEXT"
-      - name: Dump matrix context
+      - name: Dump Secret context
         env:
           SECRET_CONTEXT: ${{ toJson(secrets) }}
         run: echo "$MATRIX_CONTEXT"
